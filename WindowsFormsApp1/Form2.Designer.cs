@@ -218,21 +218,22 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.pas3;
-            this.pictureBox1.Location = new System.Drawing.Point(408, 100);
+            this.pictureBox1.Location = new System.Drawing.Point(345, 155);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(165, 84);
+            this.pictureBox1.Size = new System.Drawing.Size(216, 125);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.AliceBlue;
             this.button1.Location = new System.Drawing.Point(420, 298);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(141, 73);
             this.button1.TabIndex = 18;
             this.button1.Text = "Spremi";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // Form2
             // 
