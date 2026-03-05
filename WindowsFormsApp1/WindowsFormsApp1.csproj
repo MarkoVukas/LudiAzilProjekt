@@ -131,5 +131,11 @@
   <ItemGroup>
     <None Include="Resources\Drago-Plečko-blog-7.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0_A7MUqyCLvZDcHkfM.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cute-tabby-cat-relaxing-on-red-sofa-with-bokeh-lights-photo.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

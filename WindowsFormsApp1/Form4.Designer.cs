@@ -92,7 +92,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.cute_tabby_cat_relaxing_on_red_sofa_with_bokeh_lights_photo;
+            this.ClientSize = new System.Drawing.Size(625, 348);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label2);

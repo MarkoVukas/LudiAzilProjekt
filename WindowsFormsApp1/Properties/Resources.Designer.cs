@@ -63,6 +63,16 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _0_A7MUqyCLvZDcHkfM {
+            get {
+                object obj = ResourceManager.GetObject("0_A7MUqyCLvZDcHkfM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _2024_04_30_07_00_01_576x384 {
             get {
                 object obj = ResourceManager.GetObject("2024-04-30-07-00-01-576x384", resourceCulture);
@@ -76,6 +86,16 @@ namespace WindowsFormsApp1.Properties {
         internal static System.Drawing.Bitmap _2024_04_30_07_00_01_576x3841 {
             get {
                 object obj = ResourceManager.GetObject("2024-04-30-07-00-01-576x3841", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cute_tabby_cat_relaxing_on_red_sofa_with_bokeh_lights_photo {
+            get {
+                object obj = ResourceManager.GetObject("cute-tabby-cat-relaxing-on-red-sofa-with-bokeh-lights-photo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
