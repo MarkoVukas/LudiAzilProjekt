@@ -17,9 +17,31 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void Form2_Load(object sender, EventArgs e)
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.ShowDialog();
+            string slika = openFileDialog1.FileName;
+            pictureBox1.Load(slika);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.ShowDialog();
+            string slika = openFileDialog1.FileName;
+            string spol = " ";
+            string kastriran = " ";
+            if(checkBox1.Checked == true)
+            {
+                kastriran = "kastriran";
+            }
+            else
+            { 
+                cjepljen=
+            }
     }
 }
