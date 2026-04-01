@@ -35,13 +35,32 @@ namespace WindowsFormsApp1
             string slika = openFileDialog1.FileName;
             string spol = " ";
             string kastriran = " ";
-            if(checkBox1.Checked == true)
+            if (checkBox1.Checked == true)
             {
                 kastriran = "kastriran";
             }
             else
-            { 
-                cjepljen=
+            {
+                kastriran = "nekastriran";
             }
+            string cijepljen = " ";
+            if (checkBox2.Checked == true)
+            {
+                cijepljen = "cijepljen";
+            }
+            else
+            {
+                cijepljen = "necijepljen";
+            }
+            if (radioButton1.Checked == true)
+            {
+                spol = "muško";
+            }
+            else
+            {
+                spol = "žensko";
+            }
+            string zapis = textBox1.Text + "|" + textBox2.Text + "|" + textBox3.Text + "|"  + spol + "|" + numericUpDown1.Text + "|" + dateTimePicker1.Text + "|" + cijepljen + "|" + kastriran + "|"+ textBox4.Text + "|"+ slika;
+        }
     }
 }

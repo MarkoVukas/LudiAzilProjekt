@@ -40,9 +40,10 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.AliceBlue;
-            this.button1.Location = new System.Drawing.Point(76, 24);
+            this.button1.Location = new System.Drawing.Point(101, 30);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(127, 54);
+            this.button1.Size = new System.Drawing.Size(169, 66);
             this.button1.TabIndex = 0;
             this.button1.Text = " Unos životinje";
             this.button1.UseVisualStyleBackColor = false;
@@ -51,9 +52,10 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.AliceBlue;
-            this.button2.Location = new System.Drawing.Point(250, 26);
+            this.button2.Location = new System.Drawing.Point(333, 32);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(130, 52);
+            this.button2.Size = new System.Drawing.Size(173, 64);
             this.button2.TabIndex = 1;
             this.button2.Text = "Pregled";
             this.button2.UseVisualStyleBackColor = false;
@@ -62,9 +64,10 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.AliceBlue;
-            this.button3.Location = new System.Drawing.Point(417, 26);
+            this.button3.Location = new System.Drawing.Point(556, 32);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(131, 52);
+            this.button3.Size = new System.Drawing.Size(175, 64);
             this.button3.TabIndex = 2;
             this.button3.Text = "Filtriranje";
             this.button3.UseVisualStyleBackColor = false;
@@ -73,9 +76,10 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.AliceBlue;
-            this.button4.Location = new System.Drawing.Point(155, 107);
+            this.button4.Location = new System.Drawing.Point(207, 132);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(135, 52);
+            this.button4.Size = new System.Drawing.Size(180, 64);
             this.button4.TabIndex = 3;
             this.button4.Text = "Udomljavanje";
             this.button4.UseVisualStyleBackColor = false;
@@ -84,9 +88,10 @@
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.AliceBlue;
-            this.button5.Location = new System.Drawing.Point(332, 107);
+            this.button5.Location = new System.Drawing.Point(443, 132);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(128, 52);
+            this.button5.Size = new System.Drawing.Size(171, 64);
             this.button5.TabIndex = 4;
             this.button5.Text = "Statistika";
             this.button5.UseVisualStyleBackColor = false;
@@ -96,9 +101,10 @@
             // 
             this.button6.BackColor = System.Drawing.Color.Crimson;
             this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button6.Location = new System.Drawing.Point(188, 202);
+            this.button6.Location = new System.Drawing.Point(251, 249);
+            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(238, 50);
+            this.button6.Size = new System.Drawing.Size(317, 62);
             this.button6.TabIndex = 5;
             this.button6.Text = "Izlaz";
             this.button6.UseVisualStyleBackColor = false;
@@ -106,17 +112,18 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(626, 418);
+            this.ClientSize = new System.Drawing.Size(835, 418);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Pocetna";
             this.Load += new System.EventHandler(this.Form1_Load);
