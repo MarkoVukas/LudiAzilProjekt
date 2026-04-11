@@ -1,0 +1,107 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.IO;
+using System.Security.Cryptography.X509Certificates;
+
+namespace WindowsFormsApp1
+{
+    public static class Admin
+    {
+        public static void UnosZivotinje(string zapis)
+        {
+            StreamWriter sw = new StreamWriter("azil.txt", true);
+            sw.WriteLine(zapis);
+            sw.Close();
+        }
+        public static List<string> Ucitaj()
+        {
+            List<string> lista = new List<string>();
+            StreamReader sr = new StreamReader("azil.txt");
+            string linija = sr.ReadLine();
+            while (linija != null)
+            {
+                lista.Add(linija);
+                linija = sr.ReadLine();
+
+            }
+            sr.Close();
+            return lista;
+        }
+        public static List<string> Vrste()
+        {
+            List<string> lista = new List<string>();
+            StreamReader sr = new StreamReader("vrste.txt");
+            string linija = sr.ReadLine();
+            while (linija != null)
+            {
+                string[] dijelovi = linija.Split('|');
+                string vrsta = dijelovi[1];
+                lista.Add(vrsta);
+                linija = sr.ReadLine();
+            }
+            sr.Close();
+            return lista;
+        }
+        public static List<string> PronadiPoVrsti(string kriterij)
+        {
+            List<string> lista = new List<string>();
+            StreamReader sr = new StreamReader("azil.txt");
+            string linija = sr.ReadLine();
+            while (linija != null)
+            {
+                string[] dijelovi = linija.Split('|');
+                if (dijelovi[1] == kriterij)
+                {
+                    lista.Add(linija);
+                }
+                linija = sr.ReadLine();
+            }
+            sr.Close();
+            return lista;
+        }
+        public static void UnosUdomitelja(string zapis)
+        {
+            StreamWriter sw = new StreamWriter("udomitelji.txt", true);
+            sw.WriteLine(zapis);
+            sw.Close();
+
+        }
+        public static List<string> UcitajUdomitelje()
+        {
+            List<string> lista = new List<string>();
+            StreamReader sr = new StreamReader("udomitelji.txt");
+            string linija = sr.ReadLine();
+            while (linija != null)
+            {
+                lista.Add(linija);
+                linija = sr.ReadLine();
+            }
+            sr.Close();
+            return lista;
+        }
+        public static double ProsjecnaDob()
+        {
+            List<string> lista = new List<string>();
+            StreamReader sr = new StreamReader("azil.txt");
+            string linija = sr.ReadLine();
+            int suma = 0;
+            int brojac = 0;
+            while (linija != null)
+            {
+                string[] dijelovi = linija.Split('|');
+                int dob = int.Parse(dijelovi[4]);
+                suma += dob;
+                brojac++;
+                linija = sr.ReadLine();
+            }
+            sr.Close();
+            double prosjek =(double)suma/ brojac;
+            return prosjek;
+        }
+    }
+       
+}
