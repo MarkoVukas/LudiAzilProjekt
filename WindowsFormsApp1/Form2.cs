@@ -61,6 +61,18 @@ namespace WindowsFormsApp1
                 spol = "žensko";
             }
             string zapis = textBox1.Text + "|" + textBox2.Text + "|" + textBox3.Text + "|"  + spol + "|" + numericUpDown1.Text + "|" + dateTimePicker1.Text + "|" + cijepljen + "|" + kastriran + "|"+ textBox4.Text + "|"+ slika;
+            Admin.UnosZivotinje(zapis);
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            radioButton1.Checked = false;
+            radioButton2.Checked = false;
+            numericUpDown1.Value = 0;
+                dateTimePicker1.Value = DateTime.Now;
+            checkBox1.Checked = false;
+            checkBox2.Checked = false;
+                textBox4.Clear();
+                pictureBox1.Image = null;
         }
     }
 }
